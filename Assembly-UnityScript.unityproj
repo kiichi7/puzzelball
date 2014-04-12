@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{0FC61AF3-45F2-C313-29B7-8B8251C5D479}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-UnityScript</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_STANDALONE_WIN;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_MONO;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_WEBCAM;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;UNITY_4_2_2;UNITY_4_2;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="UnityEngine">
+	  <HintPath>C:/a folder/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>C:/a folder/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Scripts\MaybeToDoList.js" />
+     <Compile Include="Assets\Scripts\StaticGameElements\BallLogicEnemy.js" />
+     <Compile Include="Assets\Scripts\StaticGameElements\Boost.js" />
+     <Compile Include="Assets\Scripts\StaticGameElements\Large.js" />
+     <Compile Include="Assets\Scripts\StaticGameElements\LargeOnce.js" />
+     <Compile Include="Assets\Scripts\StaticGameElements\LoadLevel.js" />
+     <Compile Include="Assets\Scripts\StaticGameElements\LoadMenu.js" />
+     <Compile Include="Assets\Scripts\StaticGameElements\Medium.js" />
+     <Compile Include="Assets\Scripts\StaticGameElements\MediumOnce.js" />
+     <Compile Include="Assets\Scripts\StaticGameElements\MovingHitSound.js" />
+     <Compile Include="Assets\Scripts\StaticGameElements\NewGame.js" />
+     <Compile Include="Assets\Scripts\StaticGameElements\Quit.js" />
+     <Compile Include="Assets\Scripts\StaticGameElements\Reset.js" />
+     <Compile Include="Assets\Scripts\StaticGameElements\Small.js" />
+     <Compile Include="Assets\Scripts\StaticGameElements\SmallOnce.js" />
+     <Compile Include="Assets\Scripts\StaticGameElements\Smash.js" />
+     <Compile Include="Assets\Scripts\StaticGameElements\Spring.js" />
+     <Compile Include="Assets\Scripts\StaticGameElements\Switch.js" />
+     <Compile Include="Assets\Scripts\StaticGameElements\SwitchOnce.js" />
+     <Compile Include="Assets\Scripts\StaticGameElements\Teleport.js" />
+     <Compile Include="Assets\Scripts\StaticGameElements\WinScript.js" />
+     <Compile Include="Assets\Scripts\StaticGameElements\balllogic.js" />
+     <Compile Include="Assets\Scripts\Technical\BlobOneSurface.js" />
+     <Compile Include="Assets\Scripts\Technical\CameraObjectFade.js" />
+     <Compile Include="Assets\Scripts\Technical\EnemyAggroToggle.js" />
+     <Compile Include="Assets\Scripts\Technical\MEMBLOCK.js" />
+     <Compile Include="Assets\Scripts\Technical\MEMSTOP.js" />
+     <Compile Include="Assets\Scripts\Technical\MouseOrbit.js" />
+     <Compile Include="Assets\Scripts\Technical\NearClipPlane.js" />
+     <Compile Include="Assets\Scripts\Technical\ProgressUnlock.js" />
+     <Compile Include="Assets\Scripts\Technical\SmoothFollow.js" />
+     <Compile Include="Assets\Scripts_Cleaned\BallLogicEnemy_cleaned.js" />
+     <Compile Include="Assets\Scripts_Cleaned\BlobOneSurface_cleaned.js" />
+     <Compile Include="Assets\Scripts_Cleaned\Spring_cleaned.js" />
+     <Compile Include="Assets\Scripts_Cleaned\balllogic_cleaned.js" />
+     <Compile Include="Assets\ballroll\Prefabs\OLD\BoostLong.js" />
+     <Compile Include="Assets\ballroll\Prefabs\OLD\MeshOpt.js" />
+     <Compile Include="Assets\ballroll\Prefabs\OLD\Motion.js" />
+     <Compile Include="Assets\ballroll\Prefabs\OLD\Spike.js" />
+     <Compile Include="Assets\ballroll\Prefabs\OLD\StopMemoryGame.js" />
+     <None Include="Assets\Standard Assets\Projectors\Guidelines.txt" />
+     <None Include="Assets\Standard Assets\Projectors\Sources\Shaders\Projector Multiply.shader" />
+     <None Include="Assets\Standard Assets\Projectors\Sources\Shaders\Projector Light.shader" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
